@@ -1,0 +1,7 @@
+Singularity
+
+singularity shell (interative shell)
+singularity exec (executve e.g. python inside container)
+singularity run (execute prebuild program, designed specifically for container, e.g. like running a software, inside container)
+singularity -B pathA:pathB (bind path A of own computer to path B folder inside container)
+ls -lh (l: long format, h: human readable)
