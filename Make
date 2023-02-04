@@ -1,0 +1,11 @@
+
+Linkder file: static linker and dynamic linkder file (static.o e.g. dynamic.so) 
+windows users: .dll 
+Mac user: dylib
+
+flags: 
+-I Include directory
+-L Library directory
+-l dynamically linked library files
+
+object fie: textual representation of machine code
