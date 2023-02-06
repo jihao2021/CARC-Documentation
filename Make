@@ -9,3 +9,5 @@ flags:
 -l dynamically linked library files
 
 object fie: textual representation of machine code
+
+C++ program consist of source files and headers. They are usually text files. 
