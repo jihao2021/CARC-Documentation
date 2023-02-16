@@ -1,3 +1,37 @@
 This file adds instruction for Nautilus Kubernetes Kubectl commands and etc. 
 
 /////////////Begin Here
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-gpupod1
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: nvidia.com/gpu.product
+            operator: In
+            values:
+            - NVIDIA-GeForce-GTX-1080-Ti
+  containers:
+  - name: gpu-torch
+    image: gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/prp:latest
+    command: ["sh", "-c", "sleep infinity"]
+    resources:
+      limits:
+        memory: 16000Mi
+        cpu: 2000m
+        nvidia.com/gpu: 1
+      requests:
+        memory: 16000Mi
+        cpu: 2000m
+        nvidia.com/gpu: 1
+    volumeMounts:
+    - mountPath: /examplevol
+      name: examplevol
+  volumes:
+  - name: examplevol
+    persistentVolumeClaim:
+      claimName: test-vol
