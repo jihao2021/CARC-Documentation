@@ -1,2 +1,3 @@
 redis: remote dictionary server
 cached in memory
+configuration file located at /etc/redis/redis.conf
