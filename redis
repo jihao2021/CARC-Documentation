@@ -1,3 +1,6 @@
 redis: remote dictionary server
 cached in memory
 configuration file located at /etc/redis/redis.conf
+check log file: tail -f /var/log/redis/redis-server.log
+stop redis server: sudo service redis-server stop
+then restart redis server: redis-server
