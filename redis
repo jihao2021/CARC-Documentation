@@ -5,3 +5,7 @@ check log file: tail -f /var/log/redis/redis-server.log
 stop redis server: sudo service redis-server stop
 then restart redis server: redis-server
 CTRL + C to shutdown server
+
+In order to set password: after redis-cli:
+config set requirepass p@ss$12E45
+AUTH p@ss$12E45
