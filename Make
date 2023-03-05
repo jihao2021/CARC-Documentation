@@ -11,3 +11,8 @@ flags:
 object fie: textual representation of machine code
 
 C++ program consist of source files and headers. They are usually text files. 
+
+Cmake 
+./configure or cmake to configure all dependencies, after configuration, it will generate makefile 
+make -j8 
+make install 
