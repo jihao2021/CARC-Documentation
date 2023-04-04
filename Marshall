@@ -1,0 +1,26 @@
+Data Source: Corpus (2500 USD facteva metedata)
+
+1st stage: elaunch of EV in 1990 Jan GM plans for auto show EV1 shut down 2022
+
+2nd stage: 2003-2009 Tesla ; 2008 Roadster
+
+3rd stage: 2010 Nissan Leaf Launch
+
+Radical innovation, market demand, revenue will support launch of product of the company
+
+ANalysis
+1st media account press releases
+
+macro perspectives create document level word embeddings
+
+the model: two dimensional space
+
+press releases, news articles
+
+2nd micro level: idenfity particular about electric cars, new corpus, word embeddings
+
+3rd meso level: go to individual sentences and analayze (topic modeling)
+
+word embeddings algorithm will be out of the shelf
+
+sentence level: context free grammar (NLP tools)
