@@ -2,6 +2,9 @@ redis: remote dictionary server
 cached in memory
 configuration file located at /etc/redis/redis.conf
 check log file: tail -f /var/log/redis/redis-server.log
+
+
+The default redis server only accept local connections, in order to connect to server from remote host, you need to stop and restart the server
 stop redis server: sudo service redis-server stop
 then restart redis server: redis-server
 CTRL + C to shutdown server
