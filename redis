@@ -9,9 +9,16 @@ stop redis server: sudo service redis-server stop
 then restart redis server: redis-server
 CTRL + C to shutdown server
 
-In order to set password: after redis-cli:
-config set requirepass p@ss$12E45
-AUTH p@ss$12E45
+#In order to set password: after redis-cli:
+#config set requirepass p@ss$12E45
+#AUTH p@ss$12E45
 
 HOw to connect to remote server (make sure on usc secure wireless)
 redis-cli -h 10.72.7.34 -p 6379 -a password
+
+
+configuration file located at /etc/redis/redis.conf
+nano /etc/redis/redis.conf
+Edit configuration to be connected from remote host and require password to set password
+sudo systemctl restart redis-server  # Linux
+
