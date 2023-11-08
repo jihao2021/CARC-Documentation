@@ -1,0 +1,3 @@
+ML Perf Storage Benchmark
+use python and install pip
+mamba install pip python=3.10
