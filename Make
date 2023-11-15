@@ -1,3 +1,5 @@
+Tutorial on how to use gcc: https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+
 
 Linkder file: static linker and dynamic linkder file (static.o e.g. dynamic.so) 
 windows users: .dll 
