@@ -1,0 +1,4 @@
+Genereate ssh public key and private key and then usc ssh-copy-id: https://hpc-discourse.usc.edu/t/how-to-set-up-ssh-keys-for-faster-login-w-o-password/128
+1 ssh-keygen -t rsa -b 4096
+2 ssh-copy-id haoji@discovery.usc.edu
+After the above two steps, you can automatically login in to haoji@discovery.usc.edu without puting password everytime.
