@@ -1,0 +1,5 @@
+Conda channel information can be updated such as 
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+the information will be stored into ~/.condarc file. 
