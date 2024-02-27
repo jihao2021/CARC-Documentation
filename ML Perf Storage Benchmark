@@ -5,6 +5,7 @@ mamba install pip python=3.10
 conda crate -n test1
 conda activate test1
 conda install -c conda-forge pip python=3.10
+#May need to use module unload conda to install 
 Option 1: pip3 install mpi4py==3.1.4 --no-cache-dir and rest 
 Option 2:  pip3 install -r dlio_benchmark/requirements.txt
 
